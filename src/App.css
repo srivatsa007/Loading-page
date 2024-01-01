@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,81 @@
   to {
     transform: rotate(360deg);
   }
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+.buttons{
+  cursor: pointer;
+  padding: 10px;
+  width: 100px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  transition: box-shadow 0.5s;
+  font-size: 1rem;
+  background-color: #2F81F7;
+  color: aliceblue;
+
+}
+.buttons:hover {
+  color: #2F81F7;
+  font-weight: bold;
+  background-color: aliceblue;
+}
+.App {
+  top: 0;
+  position: relative;
+  padding: 10vh 5px 5px 5px;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 100px; */
+  gap: 20px;
+  /* width: max-content; */
+  margin-inline: auto;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+.App h1 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.progressbar {
+  height: 30px;
+  width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(217, 217, 217);
+  font-weight: 500;
+}
+
+.progressPercent {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btnContainer {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+
+.barStatus {
+  font-size: 1.25rem;
+  color: rgb(255, 255, 255);
 }
